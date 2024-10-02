@@ -1,0 +1,54 @@
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100%;
+}
+.et-a-sc {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 40px solid red;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    transition: background-color 1s 999999s;
+}
+
+.box:hover{
+    background-color: lightslategray;
+    transition: background-color 0s;
+}
+
+.container {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.downboard {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
