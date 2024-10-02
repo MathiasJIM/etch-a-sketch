@@ -1,16 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&family=Rock+Salt&display=swap');
+
 *{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
 
+
+.pacifico-regular {
+    margin-top: 50px;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+  }  
+
 body {
+    margin-top: 150px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
 }
 .et-a-sc {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    border: 40px solid red;
-    border-radius: 10px;
+    border: 40px solid rgb(197, 0, 0);
+    border-radius: 0px 0px 10px 10px;
 }
 
 .row {
@@ -26,29 +47,48 @@ body {
 }
 
 .box:hover{
-    background-color: lightslategray;
+    background-color: rgb(54, 54, 54);
     transition: background-color 0s;
 }
 
 .container {
-    margin-top: 200px;
+    display:inline-block;
+}
+
+.btns {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
 .btn {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 5px;
-    border: none;
-    padding: 5px 10px;
+    border: 2px solid black;
+    padding: 10px 20px;
     cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
-.downboard {
-    background-color: red;
-    width: 100px;
-    height: 100px;
+.btn:hover{
+    box-shadow: 3px 3px black ;
+}
+
+.upBoard {
+    background-color: rgb(197, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.circle{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100px;
+    margin: 35px;
 }
